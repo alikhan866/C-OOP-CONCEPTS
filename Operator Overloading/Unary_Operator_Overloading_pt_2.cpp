@@ -3,15 +3,12 @@ This supports obj++ , ++obj , obj = obj1++; etc
 */
 
 #include<iostream>
-
 using namespace std;
-
 class Weight {
-
 private:
     int kg;
 public:
-
+    
     Weight () {
         kg=0;
     }
@@ -47,11 +44,9 @@ public:
         temp.kg = kg--;
         return temp;
     }
-
 };
 
 int main () {
-
     Weight obj1,obj2;
     obj2 = ++obj1;
     obj2.printWeight();
