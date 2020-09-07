@@ -3,15 +3,12 @@ This supports obj++ , ++obj only and NOT assignment like obj = obj1++ etc
 */
 
 #include<iostream>
-
 using namespace std;
 
 class Weight {
-
 private:
     int kg;
 public:
-
     Weight () {
         kg=0;
     }
@@ -43,7 +40,6 @@ public:
 };
 
 int main () {
-
     Weight obj;
     obj.printWeight();
     ++obj;  // ++ doesnt know what to do with obj type since it is user defined
